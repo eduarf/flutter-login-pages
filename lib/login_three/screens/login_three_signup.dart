@@ -7,6 +7,7 @@ import 'package:logins/login_three/helper/enum.dart';
 import 'package:logins/login_three/helper/strings.dart';
 import 'package:logins/login_three/helper/text_styles.dart';
 import 'package:logins/login_three/screens/login_three_login.dart';
+import 'package:logins/login_three/widgets/input_widget.dart';
 
 class LoginThreeSignUp extends StatelessWidget {
   const LoginThreeSignUp({Key? key}) : super(key: key);
@@ -20,6 +21,7 @@ class LoginThreeSignUp extends StatelessWidget {
     final LoginThreeTextStyles textStyles = LoginThreeTextStyles();
     return Scaffold(
       backgroundColor: colors.bgWhite,
+      resizeToAvoidBottomInset: true,
       appBar: appBarWidget(colors, context),
       body: SingleChildScrollView(
         child: SizedBox(
